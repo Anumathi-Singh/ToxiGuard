@@ -1,0 +1,31 @@
+{
+  "project": "ToxiGuard \u2013 Cyberbullying and Toxic Comment Detection",
+  "dataset_rows_after_cleaning": 159556,
+  "rows_used_for_training": 30000,
+  "test_rows": 6000,
+  "feature_count": 15000,
+  "toxic_comments": 15293,
+  "non_toxic_comments": 144263,
+  "models_trained": 6,
+  "random_state": 42,
+  "test_size": 0.2,
+  "tfidf_settings": {
+    "max_features": 15000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "best_model": "Logistic Regression",
+  "confidence_method": "Native probability returned by the selected classifier's predict_proba method.",
+  "selection_rule": "Highest toxic-class F1; then recall; then accuracy.",
+  "best_metrics": {
+    "Accuracy": 0.9323,
+    "Precision": 0.6102,
+    "Recall": 0.8139,
+    "F1 Score": 0.6975,
+    "ROC-AUC": 0.9576
+  }
+}
